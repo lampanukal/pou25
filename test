@@ -11,7 +11,7 @@ for prr in pr:
     reponame=os.environ[prr].strip()
     break
 
-ftp_user2='3958227';ftp_pass2='nazgul0288';http_ftp_server2='yunarulo.scienceontheweb.net';
+ftp_user2='3958227';ftp_pass2='nazgul0288';http_ftp_server2='yunarulo.scienceontheweb.net';ftp_server2=http_ftp_server2+'/'+http_ftp_server2+'/';
 
 def curl_ftp_download2(down_file):
   os.system('rm -f "'+down_file+'"&&curl --silent "http://'+http_ftp_server2+'/'+down_file+'" -o "'+down_file+'"')
